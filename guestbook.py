@@ -6,7 +6,7 @@ from flask import Flask, request, render_template, redirect, escape, Markup, url
 
 application = Flask(__name__)
 
-DATA_FILE = 'guestbook.dat'
+DATA_FILE = 'guestbook'
 
 
 def save_data(name, comment, create_at):
