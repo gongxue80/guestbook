@@ -54,7 +54,11 @@ def nl2br_filter(s):
 
 @application.template_filter('datetime_fmt')
 def datetime_fmt_filter(dt):
-    return dt.strftime('%Y/%m/%d %H:%M:%S')
+    return dt.strftime('%Y-%m-%d %H:%M:%S')
+
+
+def main():
+    application.run('0.0.0.0', 8000)
 
 
 if __name__ == '__main__':
